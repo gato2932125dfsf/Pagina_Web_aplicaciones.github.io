@@ -3,37 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git</title>
+    <title>Git - Rosales Crispin</title>
     <link rel="stylesheet" href="diseño.css">
 </head>
 <body>
+
+    <!-- Navbar -->
     <header class="navbar">
         <div class="logo-container">
-            <img src="imagenes/logouplatransparente.png" alt="Logo" class="logo">
-            <h2>
-                Alumno: Rosales Cripin Aristoteles Onassis
-            </h2>
+            <img src="imagenes/logouplatransparente.png" alt="Logo UPLA" class="logo">
+            <h2>Alumno: Rosales Crispin Aristoteles Onassis</h2>
         </div>
         <nav class="nav-links">
-            <a href="index.html" class="active">Inicio</a>
+            <a href="index.html">Inicio</a>
             <a href="proyectos.html">Proyectos</a>
             <a href="github.html">GitHub</a>
-            <a href="git.html">Git</a>
+            <a href="git.html" class="active">Git</a>
         </nav>
     </header>
 
     <main class="container">
-        <h1>Git</h1>
-        <p>Git es un sistema de control de versiones que permite llevar un historial de los cambios realizados en proyectos de software, facilitando la colaboración entre programadores.</p>
-        <p>En mi experiencia, Git ha sido fundamental para mantener mis proyectos organizados y trabajar en equipo de forma eficiente.</p>
+
+        <!-- Introducción a Git -->
+        <section class="intro">
+            <h1>¿Qué es Git?</h1>
+            <p>Git es un sistema de control de versiones distribuido que permite registrar los cambios en los archivos de un proyecto a lo largo del tiempo. Facilita la colaboración entre desarrolladores, mantiene un historial completo y permite revertir cambios si es necesario.</p>
+        </section>
+
+        <!-- Necesidad -->
+        <section class="intro">
+            <h2>¿Por qué es necesario?</h2>
+            <p>Git es fundamental para cualquier desarrollador, ya que permite controlar las versiones de un proyecto de manera eficiente. Evita la pérdida de trabajo, facilita la colaboración en equipo y permite revertir versiones anteriores si se comete un error.</p>
+        </section>
+
+        <!-- Funcionalidades -->
+        <section class="intro">
+            <h2>Funcionalidades Principales</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Ramificación (Branching)</h3>
+                    <p>Permite crear ramas de trabajo aisladas para experimentar con nuevas características sin afectar el código principal.</p>
+                </div>
+                <div class="card">
+                    <h3>Historial de Versiones</h3>
+                    <p>Cada cambio se registra con un "commit", creando un historial completo y navegable del proyecto.</p>
+                </div>
+                <div class="card">
+                    <h3>Colaboración Sencilla</h3>
+                    <p>Facilita la fusión de los cambios de diferentes desarrolladores de manera controlada y sin conflictos.</p>
+                </div>
+                <div class="card">
+                    <h3>Reversión de Cambios</h3>
+                    <p>Puedes deshacer cambios o volver a una versión anterior del proyecto en cualquier momento.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flujo de trabajo -->
+        <section class="flujo">
+            <h2>Funcionamiento de Git</h2>
+            <ol class="steps">
+                <li><strong>Paso 1:</strong> Clonar el repositorio<br><code>git clone https://github.com/tu-usuario/nombre-del-repo.git</code></li>
+                <li><strong>Paso 2:</strong> Navegar al directorio<br><code>cd nombre-del-repo</code></li>
+                <li><strong>Paso 3:</strong> Agregar cambios<br><code>git add .</code></li>
+                <li><strong>Paso 4:</strong> Guardar cambios (Commit)<br><code>git commit -m "feat: Agrega un nuevo archivo"</code></li>
+                <li><strong>Paso 5:</strong> Enviar cambios (Push)<br><code>git push origin main</code></li>
+            </ol>
+        </section>
+
+        <!-- Botones de acción -->
+        <section class="manual-actions" style="text-align:center; margin-top:30px;">
+            <div class="btn-group">
+                <a href="https://github.com/Jeffry-1975/desarrollo-apps-2" target="_blank" class="btn">Visitar Repositorio</a>
+                 <!-- Abre el manual para leer en el navegador -->
+                 <a href="InformeSemanal/RC Guia de Git.pdf" target="_blank" class="btn">Leer Manual Completo</a>
+                <a href="InformeSemanal/RC Guia de Git.pdf" download class="btn">Descargar Manual</a>
+            </div>
+        </section>
+
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
-        <p>© 2025 Jefferson Paredes. Todos los derechos reservados.</p>
-        <p>t01304d@ms.upla.edu.pe</p>
-        <p>Repositorio: <a href="https://github.com/Jeffry-1975/desarrollo-apps-2" target="_blank">GitHub</a></p>
+        <p>© 2025 Rosales Crispin Aristoteles Onassis. Todos los derechos reservados.</p>
+        <p>Correo: <a href="mailto:t01316f@ms.upla.edu.pe">t01316f@ms.upla.edu.pe</a></p>
+        <p>Repositorio: <a href="https://github.com/gato2932125dfsf/Pagina_Web_aplicaciones.github.io" target="_blank">GitHub</a></p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+
